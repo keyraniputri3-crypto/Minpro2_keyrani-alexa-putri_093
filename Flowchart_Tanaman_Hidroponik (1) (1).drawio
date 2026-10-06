@@ -1,0 +1,1180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17">
+  <diagram id="hidroponik-lengkap" name="Flowchart Lengkap">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5050" pageHeight="15565" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="FLOWCHART LENGKAP — PENDATAAN TANAMAN HIDROPONIK" style="text;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;strokeColor=none;fontSize=36;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100.0" y="42.5" width="4850" height="65" />
+        </mxCell>
+        <mxCell id="subtitle" value="Satu alur tersambung • Percabangan mengikuti kode • Semua validasi dijabarkan" style="text;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100.0" y="120.0" width="4850" height="50" />
+        </mxCell>
+        <mxCell id="start" value="MULAI" style="ellipse;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="465.0" y="210.0" width="310" height="70" />
+        </mxCell>
+        <mxCell id="import" value="from datetime import datetime" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="380.0" y="310.0" width="480" height="80" />
+        </mxCell>
+        <mxCell id="akun" value="Inisialisasi dictionary akun&#10;admin: password admin123, role admin&#10;user: password user123, role user" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="325.0" y="412.5" width="590" height="105" />
+        </mxCell>
+        <mxCell id="tanaman" value="Inisialisasi list tanaman = []" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="380.0" y="550.0" width="480" height="80" />
+        </mxCell>
+        <mxCell id="login_header" value="Output &quot;--- LOGIN ---&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="405.0" y="667.5" width="430" height="85" />
+        </mxCell>
+        <mxCell id="username" value="Input username&#10;username = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="400.0" y="780.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="password" value="Input password&#10;password = input(&quot;Password: &quot;)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="400.0" y="900.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="exists" value="username in akun?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="440.0" y="1022.5" width="360" height="145" />
+        </mxCell>
+        <mxCell id="pwok" value="password ==&#10;akun[username][&quot;password&quot;]?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="382.5" y="1227.5" width="475" height="165" />
+        </mxCell>
+        <mxCell id="login_error" value="Output &quot;Username atau&#10;password salah&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1020.0" y="1152.5" width="440" height="95" />
+        </mxCell>
+        <mxCell id="success" value="Output &quot;Login berhasil&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="405.0" y="1440.0" width="430" height="80" />
+        </mxCell>
+        <mxCell id="role" value="return akun[username][&quot;role&quot;]&#10;Simpan hasil login() ke role" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="380.0" y="1525.0" width="480" height="70" />
+        </mxCell>
+        <mxCell id="menu_header" value="Output judul PENDATAAN TANAMAN HIDROPONIK&#10;Output &quot;User :&quot;, role dan &quot;Role :&quot;, role" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="310.0" y="1605.0" width="620" height="90" />
+        </mxCell>
+        <mxCell id="roleadmin" value="role == &quot;admin&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="435.0" y="1765.0" width="370" height="150" />
+        </mxCell>
+        <mxCell id="roleuser" value="role == &quot;user&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2865.0" y="1765.0" width="370" height="150" />
+        </mxCell>
+        <mxCell id="usermenu" value="Output menu USER&#10;1. Tampilkan Semua Data Tanaman&#10;2. Keluar" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2770.0" y="2000.0" width="560" height="140" />
+        </mxCell>
+        <mxCell id="userinput" value="Input pilihan (1–2)&#10;pilihan = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2825.0" y="2232.5" width="450" height="95" />
+        </mxCell>
+        <mxCell id="user1" value="pilihan == &quot;1&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2875.0" y="2387.5" width="350" height="145" />
+        </mxCell>
+        <mxCell id="user2" value="pilihan == &quot;2&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2875.0" y="3447.5" width="350" height="145" />
+        </mxCell>
+        <mxCell id="userinvalid" value="Output &quot;Pilihan tidak valid&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2830.0" y="3692.5" width="440" height="85" />
+        </mxCell>
+        <mxCell id="userlogout" value="Output &quot;Berhasil keluar dari akun.&quot;&#10;return dari menu_utama(role)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2777.5" y="3927.5" width="545" height="105" />
+        </mxCell>
+        <mxCell id="uread_title" value="Output &quot;--- DATA TANAMAN ---&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="3705.0" y="2417.5" width="470" height="85" />
+        </mxCell>
+        <mxCell id="uread_empty" value="tanaman kosong?&#10;(if not tanaman)" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="3755.0" y="2557.5" width="370" height="145" />
+        </mxCell>
+        <mxCell id="uread_blank" value="Output &quot;Belum ada&#10;data tanaman.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="4305.0" y="2585.0" width="360" height="90" />
+        </mxCell>
+        <mxCell id="uread_iter" value="Mulai enumerate(tanaman, 1)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="3720.0" y="2757.5" width="440" height="85" />
+        </mxCell>
+        <mxCell id="uread_for" value="Masih ada data&#10;dalam tanaman?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="3755.0" y="2892.5" width="370" height="145" />
+        </mxCell>
+        <mxCell id="uread_out" value="Ambil i dan data berikutnya&#10;Output &quot;Data ke-&quot;, i&#10;Output &quot;Nama   :&quot;, data[&quot;nama&quot;]&#10;Output &quot;Jenis  :&quot;, data[&quot;jenis&quot;]&#10;Output &quot;Jumlah :&quot;, data[&quot;jumlah&quot;]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="3677.5" y="3095.0" width="525" height="190" />
+        </mxCell>
+        <mxCell id="adminmenu" value="Output menu ADMIN&#10;1. Tambah Data Tanaman&#10;2. Tampilkan Semua Data Tanaman&#10;3. Ubah Data Tanaman&#10;4. Hapus Data Tanaman&#10;5. Keluar" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="342.5" y="1995.0" width="555" height="190" />
+        </mxCell>
+        <mxCell id="admininput" value="Input pilihan (1–5)&#10;pilihan = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="395.0" y="2272.5" width="450" height="95" />
+        </mxCell>
+        <mxCell id="choice1" value="pilihan == &quot;1&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="445.0" y="2427.5" width="350" height="145" />
+        </mxCell>
+        <mxCell id="add_title" value="Output &quot;--- TAMBAH DATA TANAMAN ---&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1485.0" y="2457.5" width="550" height="85" />
+        </mxCell>
+        <mxCell id="add_name_in" value="Input teks: &quot;Nama tanaman:&quot;&#10;teks = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="2605.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="add_name_ok" value="teks != &quot;&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="2725.0" width="330" height="140" />
+        </mxCell>
+        <mxCell id="add_name_err" value="Output &quot;Input tidak&#10;boleh kosong&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090.0" y="2750.0" width="340" height="90" />
+        </mxCell>
+        <mxCell id="add_name_ret" value="return teks&#10;Hasil disimpan ke nama" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1550.0" y="2907.5" width="420" height="85" />
+        </mxCell>
+        <mxCell id="add_type_in" value="Input teks: &quot;Jenis tanaman:&quot;&#10;teks = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="3055.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="add_type_ok" value="teks != &quot;&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="3175.0" width="330" height="140" />
+        </mxCell>
+        <mxCell id="add_type_err" value="Output &quot;Input tidak&#10;boleh kosong&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090.0" y="3200.0" width="340" height="90" />
+        </mxCell>
+        <mxCell id="add_type_ret" value="return teks&#10;Hasil disimpan ke jenis" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1550.0" y="3357.5" width="420" height="85" />
+        </mxCell>
+        <mxCell id="add_num_in" value="Input teks: &quot;Jumlah tanaman:&quot;&#10;teks = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="3505.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="add_num_empty" value="teks == &quot;&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="3630.0" width="330" height="140" />
+        </mxCell>
+        <mxCell id="add_num_blank" value="Output &quot;Input tidak&#10;boleh kosong&quot;&#10;continue: ulangi input" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090.0" y="3645.0" width="340" height="110" />
+        </mxCell>
+        <mxCell id="add_num_true" value="valid = True" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="3822.5" width="330" height="75" />
+        </mxCell>
+        <mxCell id="add_num_for" value="Masih ada karakter&#10;dalam teks?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="3927.5" width="380" height="145" />
+        </mxCell>
+        <mxCell id="add_num_next" value="Ambil karakter berikutnya&#10;(for karakter in teks)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1555.0" y="4117.5" width="410" height="85" />
+        </mxCell>
+        <mxCell id="add_num_char" value="karakter not in&#10;&quot;0123456789&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="4245.0" width="380" height="150" />
+        </mxCell>
+        <mxCell id="add_num_false" value="valid = False&#10;break dari perulangan for" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1085.0" y="4275.0" width="350" height="90" />
+        </mxCell>
+        <mxCell id="add_num_valid" value="valid == True?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1590.0" y="4450.0" width="340" height="140" />
+        </mxCell>
+        <mxCell id="add_num_error" value="Output &quot;Input harus berupa&#10;bilangan bulat 0 atau lebih.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2077.5" y="4470.0" width="405" height="100" />
+        </mxCell>
+        <mxCell id="add_num_ret" value="return int(teks)&#10;Hasil disimpan ke jumlah" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1545.0" y="4655.0" width="430" height="90" />
+        </mxCell>
+        <mxCell id="add_dict" value="return dictionary hasil input_data()&#10;{&quot;nama&quot;: nama, &quot;jenis&quot;: jenis,&#10;&quot;jumlah&quot;: jumlah}" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1515.0" y="4805.0" width="490" height="110" />
+        </mxCell>
+        <mxCell id="append" value="tanaman.append(dictionary hasil input_data())" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1462.5" y="4967.5" width="595" height="85" />
+        </mxCell>
+        <mxCell id="add_success" value="Output &quot;Data berhasil ditambahkan&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1502.5" y="5107.5" width="515" height="85" />
+        </mxCell>
+        <mxCell id="choice2" value="pilihan == &quot;2&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="445.0" y="5332.5" width="350" height="145" />
+        </mxCell>
+        <mxCell id="aread_title" value="Output &quot;--- DATA TANAMAN ---&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1525.0" y="5362.5" width="470" height="85" />
+        </mxCell>
+        <mxCell id="aread_empty" value="tanaman kosong?&#10;(if not tanaman)" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1575.0" y="5502.5" width="370" height="145" />
+        </mxCell>
+        <mxCell id="aread_blank" value="Output &quot;Belum ada&#10;data tanaman.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1035.0" y="5530.0" width="360" height="90" />
+        </mxCell>
+        <mxCell id="aread_iter" value="Mulai enumerate(tanaman, 1)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="5702.5" width="440" height="85" />
+        </mxCell>
+        <mxCell id="aread_for" value="Masih ada data&#10;dalam tanaman?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1575.0" y="5837.5" width="370" height="145" />
+        </mxCell>
+        <mxCell id="aread_out" value="Ambil i dan data berikutnya&#10;Output &quot;Data ke-&quot;, i&#10;Output &quot;Nama   :&quot;, data[&quot;nama&quot;]&#10;Output &quot;Jenis  :&quot;, data[&quot;jenis&quot;]&#10;Output &quot;Jumlah :&quot;, data[&quot;jumlah&quot;]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1497.5" y="6040.0" width="525" height="190" />
+        </mxCell>
+        <mxCell id="choice3" value="pilihan == &quot;3&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="445.0" y="6532.5" width="350" height="145" />
+        </mxCell>
+        <mxCell id="update_title" value="Output &quot;--- UBAH DATA TANAMAN ---&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1485.0" y="6562.5" width="550" height="85" />
+        </mxCell>
+        <mxCell id="update_empty" value="tanaman kosong?&#10;(if not tanaman)" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1575.0" y="6702.5" width="370" height="145" />
+        </mxCell>
+        <mxCell id="update_blank" value="Output &quot;Belum ada&#10;data tanaman.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1045.0" y="6727.5" width="370" height="95" />
+        </mxCell>
+        <mxCell id="update_select_iter" value="Mulai enumerate(tanaman, 1)&#10;Nomor urut dimulai dari 1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1550.0" y="6912.5" width="420" height="85" />
+        </mxCell>
+        <mxCell id="update_select_for" value="Masih ada data&#10;dalam tanaman?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1580.0" y="7037.5" width="360" height="145" />
+        </mxCell>
+        <mxCell id="update_select_show" value="Ambil i dan data berikutnya&#10;Output i, &quot;.&quot;, data[&quot;nama&quot;]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1535.0" y="7230.0" width="450" height="90" />
+        </mxCell>
+        <mxCell id="update_select_n_in" value="Input teks: &quot;Pilih nomor data:&quot;&#10;teks = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="7445.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="update_select_n_empty" value="teks == &quot;&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="7570.0" width="330" height="140" />
+        </mxCell>
+        <mxCell id="update_select_n_blank" value="Output &quot;Input tidak&#10;boleh kosong&quot;&#10;continue: ulangi input" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090.0" y="7585.0" width="340" height="110" />
+        </mxCell>
+        <mxCell id="update_select_n_true" value="valid = True" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="7762.5" width="330" height="75" />
+        </mxCell>
+        <mxCell id="update_select_n_for" value="Masih ada karakter&#10;dalam teks?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="7867.5" width="380" height="145" />
+        </mxCell>
+        <mxCell id="update_select_n_next" value="Ambil karakter berikutnya&#10;(for karakter in teks)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1555.0" y="8057.5" width="410" height="85" />
+        </mxCell>
+        <mxCell id="update_select_n_char" value="karakter not in&#10;&quot;0123456789&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="8185.0" width="380" height="150" />
+        </mxCell>
+        <mxCell id="update_select_n_false" value="valid = False&#10;break dari perulangan for" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1085.0" y="8215.0" width="350" height="90" />
+        </mxCell>
+        <mxCell id="update_select_n_valid" value="valid == True?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1590.0" y="8390.0" width="340" height="140" />
+        </mxCell>
+        <mxCell id="update_select_n_error" value="Output &quot;Input harus berupa&#10;bilangan bulat 0 atau lebih.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2077.5" y="8410.0" width="405" height="100" />
+        </mxCell>
+        <mxCell id="update_select_n_ret" value="return int(teks)&#10;Hasil disimpan ke nomor" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1545.0" y="8595.0" width="430" height="90" />
+        </mxCell>
+        <mxCell id="update_select_range" value="1 &lt;= nomor &lt;=&#10;len(tanaman)?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="8732.5" width="380" height="155" />
+        </mxCell>
+        <mxCell id="update_select_bad" value="Output &quot;Masukkan nomor&#10;data yang tersedia.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2105.0" y="8762.5" width="400" height="95" />
+        </mxCell>
+        <mxCell id="update_select_index" value="return nomor - 1 dari pilih_data()&#10;Simpan indeks tersebut ke nomor" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1517.5" y="8942.5" width="485" height="95" />
+        </mxCell>
+        <mxCell id="replacement" value="Output &quot;Masukkan data pengganti:&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1510.0" y="9092.5" width="500" height="85" />
+        </mxCell>
+        <mxCell id="update_name_in" value="Input teks: &quot;Nama tanaman:&quot;&#10;teks = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="9235.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="update_name_ok" value="teks != &quot;&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="9355.0" width="330" height="140" />
+        </mxCell>
+        <mxCell id="update_name_err" value="Output &quot;Input tidak&#10;boleh kosong&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090.0" y="9380.0" width="340" height="90" />
+        </mxCell>
+        <mxCell id="update_name_ret" value="return teks&#10;Hasil disimpan ke nama" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1550.0" y="9537.5" width="420" height="85" />
+        </mxCell>
+        <mxCell id="update_type_in" value="Input teks: &quot;Jenis tanaman:&quot;&#10;teks = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="9685.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="update_type_ok" value="teks != &quot;&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="9805.0" width="330" height="140" />
+        </mxCell>
+        <mxCell id="update_type_err" value="Output &quot;Input tidak&#10;boleh kosong&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090.0" y="9830.0" width="340" height="90" />
+        </mxCell>
+        <mxCell id="update_type_ret" value="return teks&#10;Hasil disimpan ke jenis" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1550.0" y="9987.5" width="420" height="85" />
+        </mxCell>
+        <mxCell id="update_num_in" value="Input teks: &quot;Jumlah tanaman:&quot;&#10;teks = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="10135.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="update_num_empty" value="teks == &quot;&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="10260.0" width="330" height="140" />
+        </mxCell>
+        <mxCell id="update_num_blank" value="Output &quot;Input tidak&#10;boleh kosong&quot;&#10;continue: ulangi input" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090.0" y="10275.0" width="340" height="110" />
+        </mxCell>
+        <mxCell id="update_num_true" value="valid = True" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="10452.5" width="330" height="75" />
+        </mxCell>
+        <mxCell id="update_num_for" value="Masih ada karakter&#10;dalam teks?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="10557.5" width="380" height="145" />
+        </mxCell>
+        <mxCell id="update_num_next" value="Ambil karakter berikutnya&#10;(for karakter in teks)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1555.0" y="10747.5" width="410" height="85" />
+        </mxCell>
+        <mxCell id="update_num_char" value="karakter not in&#10;&quot;0123456789&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="10875.0" width="380" height="150" />
+        </mxCell>
+        <mxCell id="update_num_false" value="valid = False&#10;break dari perulangan for" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1085.0" y="10905.0" width="350" height="90" />
+        </mxCell>
+        <mxCell id="update_num_valid" value="valid == True?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1590.0" y="11080.0" width="340" height="140" />
+        </mxCell>
+        <mxCell id="update_num_error" value="Output &quot;Input harus berupa&#10;bilangan bulat 0 atau lebih.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2077.5" y="11100.0" width="405" height="100" />
+        </mxCell>
+        <mxCell id="update_num_ret" value="return int(teks)&#10;Hasil disimpan ke jumlah" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1545.0" y="11285.0" width="430" height="90" />
+        </mxCell>
+        <mxCell id="update_dict" value="return dictionary hasil input_data()&#10;{&quot;nama&quot;: nama, &quot;jenis&quot;: jenis,&#10;&quot;jumlah&quot;: jumlah}" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1515.0" y="11435.0" width="490" height="110" />
+        </mxCell>
+        <mxCell id="set" value="tanaman[nomor] = dictionary hasil input_data()" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1462.5" y="11597.5" width="595" height="85" />
+        </mxCell>
+        <mxCell id="update_success" value="Output &quot;Data berhasil diubah&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1515.0" y="11737.5" width="490" height="85" />
+        </mxCell>
+        <mxCell id="choice4" value="pilihan == &quot;4&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="445.0" y="11962.5" width="350" height="145" />
+        </mxCell>
+        <mxCell id="delete_title" value="Output &quot;--- HAPUS DATA TANAMAN ---&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1485.0" y="11992.5" width="550" height="85" />
+        </mxCell>
+        <mxCell id="delete_empty" value="tanaman kosong?&#10;(if not tanaman)" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1575.0" y="12132.5" width="370" height="145" />
+        </mxCell>
+        <mxCell id="delete_blank" value="Output &quot;Belum ada&#10;data tanaman.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1045.0" y="12157.5" width="370" height="95" />
+        </mxCell>
+        <mxCell id="delete_select_iter" value="Mulai enumerate(tanaman, 1)&#10;Nomor urut dimulai dari 1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1550.0" y="12342.5" width="420" height="85" />
+        </mxCell>
+        <mxCell id="delete_select_for" value="Masih ada data&#10;dalam tanaman?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1580.0" y="12467.5" width="360" height="145" />
+        </mxCell>
+        <mxCell id="delete_select_show" value="Ambil i dan data berikutnya&#10;Output i, &quot;.&quot;, data[&quot;nama&quot;]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1535.0" y="12660.0" width="450" height="90" />
+        </mxCell>
+        <mxCell id="delete_select_n_in" value="Input teks: &quot;Pilih nomor data:&quot;&#10;teks = input(...).strip()" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1540.0" y="12875.0" width="440" height="90" />
+        </mxCell>
+        <mxCell id="delete_select_n_empty" value="teks == &quot;&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="13000.0" width="330" height="140" />
+        </mxCell>
+        <mxCell id="delete_select_n_blank" value="Output &quot;Input tidak&#10;boleh kosong&quot;&#10;continue: ulangi input" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090.0" y="13015.0" width="340" height="110" />
+        </mxCell>
+        <mxCell id="delete_select_n_true" value="valid = True" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1595.0" y="13192.5" width="330" height="75" />
+        </mxCell>
+        <mxCell id="delete_select_n_for" value="Masih ada karakter&#10;dalam teks?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="13297.5" width="380" height="145" />
+        </mxCell>
+        <mxCell id="delete_select_n_next" value="Ambil karakter berikutnya&#10;(for karakter in teks)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1555.0" y="13487.5" width="410" height="85" />
+        </mxCell>
+        <mxCell id="delete_select_n_char" value="karakter not in&#10;&quot;0123456789&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="13615.0" width="380" height="150" />
+        </mxCell>
+        <mxCell id="delete_select_n_false" value="valid = False&#10;break dari perulangan for" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1085.0" y="13645.0" width="350" height="90" />
+        </mxCell>
+        <mxCell id="delete_select_n_valid" value="valid == True?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1590.0" y="13820.0" width="340" height="140" />
+        </mxCell>
+        <mxCell id="delete_select_n_error" value="Output &quot;Input harus berupa&#10;bilangan bulat 0 atau lebih.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2077.5" y="13840.0" width="405" height="100" />
+        </mxCell>
+        <mxCell id="delete_select_n_ret" value="return int(teks)&#10;Hasil disimpan ke nomor" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1545.0" y="14025.0" width="430" height="90" />
+        </mxCell>
+        <mxCell id="delete_select_range" value="1 &lt;= nomor &lt;=&#10;len(tanaman)?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1570.0" y="14162.5" width="380" height="155" />
+        </mxCell>
+        <mxCell id="delete_select_bad" value="Output &quot;Masukkan nomor&#10;data yang tersedia.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2105.0" y="14192.5" width="400" height="95" />
+        </mxCell>
+        <mxCell id="delete_select_index" value="return nomor - 1 dari pilih_data()&#10;Simpan indeks tersebut ke nomor" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1517.5" y="14372.5" width="485" height="95" />
+        </mxCell>
+        <mxCell id="pop" value="tanaman.pop(nomor)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1530.0" y="14532.5" width="460" height="85" />
+        </mxCell>
+        <mxCell id="delete_success" value="Output &quot;Data berhasil dihapus&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1505.0" y="14677.5" width="510" height="85" />
+        </mxCell>
+        <mxCell id="choice5" value="pilihan == &quot;5&quot;?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="445.0" y="14892.5" width="350" height="145" />
+        </mxCell>
+        <mxCell id="adminlogout" value="Output &quot;Berhasil keluar dari akun.&quot;&#10;return dari menu_utama(role)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1485.0" y="14912.5" width="550" height="105" />
+        </mxCell>
+        <mxCell id="admininvalid" value="Output &quot;Pilihan tidak valid&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="397.5" y="15132.5" width="445" height="85" />
+        </mxCell>
+        <mxCell id="notes_title" value="CARA MEMBACA ALUR" style="text;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;strokeColor=none;fontSize=26;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2840.0" y="795.0" width="1500" height="70" />
+        </mxCell>
+        <mxCell id="notes" value="• Ya / Tidak mengikuti hasil kondisi dalam belah ketupat.&#10;&#10;• Nama fungsi dijabarkan menjadi langkah yang dijalankan;&#10;  validasi yang dipanggil kembali digambar pada tiap pemakaiannya.&#10;&#10;• Jalur ke menu kembali menampilkan judul dan memeriksa role.&#10;&#10;• Keluar dari akun menjalankan return, lalu while True&#10;  memanggil login() kembali. Tidak ada END dalam kode.&#10;&#10;• List tanaman dibuat satu kali. Data tetap ada saat berganti akun&#10;  selama proses program masih berjalan.&#10;&#10;• datetime hanya diimpor; kode terakhir tidak menampilkan tanggal." style="text;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#202020;fontColor=#101010;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;strokeWidth=2;strokeColor=none;align=left;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2805.0" y="885.0" width="1570" height="650" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="start" target="import">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge1" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="import" target="akun">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge2" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="akun" target="tanaman">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge3" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="tanaman" target="login_header">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge4" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="login_header" target="username">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge5" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="username" target="password">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge6" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="password" target="exists">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge7" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="exists" target="pwok">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge8" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="exists" target="login_error">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1240" y="1095" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1" source="pwok" target="login_error">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1240" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="login_error" target="login_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1550" y="1200" />
+              <mxPoint x="1550" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="pwok" target="success">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge12" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="success" target="role">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge13" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="role" target="menu_header">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge14" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="menu_header" target="roleadmin">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge15" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="roleadmin" target="roleuser">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge16" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="roleuser" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4550" y="1840" />
+              <mxPoint x="4550" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge17" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="roleuser" target="usermenu">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge18" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="usermenu" target="userinput">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge19" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="userinput" target="user1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge20" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="uread_title" target="uread_empty">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge21" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="uread_empty" target="uread_blank">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge22" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="uread_empty" target="uread_iter">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge23" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="uread_iter" target="uread_for">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge24" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="uread_for" target="uread_out">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge25" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="uread_out" target="uread_for">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4285" y="3190" />
+              <mxPoint x="4285" y="2965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge26" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="uread_for" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="3600" y="2965" />
+              <mxPoint x="3600" y="3330" />
+              <mxPoint x="4650" y="3330" />
+              <mxPoint x="4650" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge27" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="uread_blank" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4750" y="2630" />
+              <mxPoint x="4750" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge28" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user1" target="uread_title">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge29" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="user1" target="user2">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge30" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user2" target="userlogout">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2730" y="3520" />
+              <mxPoint x="2730" y="3980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge31" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="user2" target="userinvalid">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge32" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="userinvalid" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4750" y="3735" />
+              <mxPoint x="4750" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge33" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="userlogout" target="login_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4900" y="3980" />
+              <mxPoint x="4900" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge34" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="roleadmin" target="adminmenu">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge35" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="adminmenu" target="admininput">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge36" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="admininput" target="choice1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge37" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="choice1" target="add_title">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge38" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_name_in" target="add_name_ok">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge39" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_name_ok" target="add_name_ret">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge40" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="add_name_ok" target="add_name_err">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge41" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="add_name_err" target="add_name_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1025" y="2795" />
+              <mxPoint x="1025" y="2650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge42" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_type_in" target="add_type_ok">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge43" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_type_ok" target="add_type_ret">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge44" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="add_type_ok" target="add_type_err">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge45" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="add_type_err" target="add_type_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1025" y="3245" />
+              <mxPoint x="1025" y="3100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge46" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_num_in" target="add_num_empty">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge47" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="add_num_empty" target="add_num_blank">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge48" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="add_num_blank" target="add_num_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1025" y="3700" />
+              <mxPoint x="1025" y="3550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge49" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_num_empty" target="add_num_true">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge50" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_num_true" target="add_num_for">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge51" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_num_for" target="add_num_next">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge52" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_num_next" target="add_num_char">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge53" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="add_num_char" target="add_num_false">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge54" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="add_num_char" target="add_num_for">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2080" y="4320" />
+              <mxPoint x="2080" y="4000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge55" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_num_for" target="add_num_valid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1475" y="4000" />
+              <mxPoint x="1475" y="4420" />
+              <mxPoint x="1760" y="4420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge56" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="add_num_false" target="add_num_valid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1260" y="4520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge57" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_num_valid" target="add_num_ret">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge58" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="add_num_valid" target="add_num_error">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge59" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="add_num_error" target="add_num_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2545" y="4520" />
+              <mxPoint x="2545" y="3550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge60" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_name_ret" target="add_type_in">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge61" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_type_ret" target="add_num_in">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge62" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_num_ret" target="add_dict">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge63" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_title" target="add_name_in">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge64" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="add_dict" target="append">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge65" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="append" target="add_success">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge66" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="add_success" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4750" y="5150" />
+              <mxPoint x="4750" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge67" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="choice1" target="choice2">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge68" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="aread_title" target="aread_empty">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge69" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="aread_empty" target="aread_blank">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge70" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="aread_empty" target="aread_iter">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge71" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="aread_iter" target="aread_for">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge72" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="aread_for" target="aread_out">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge73" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="aread_out" target="aread_for">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2105" y="6135" />
+              <mxPoint x="2105" y="5910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge74" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="aread_for" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1420" y="5910" />
+              <mxPoint x="1420" y="6275" />
+              <mxPoint x="4650" y="6275" />
+              <mxPoint x="4650" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge75" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="aread_blank" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="960" y="5575" />
+              <mxPoint x="960" y="6360" />
+              <mxPoint x="4710" y="6360" />
+              <mxPoint x="4710" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge76" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="choice2" target="aread_title">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge77" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="choice2" target="choice3">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge78" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="choice3" target="update_title">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge79" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_title" target="update_empty">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge80" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_empty" target="update_blank">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge81" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_blank" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="90" y="6775" />
+              <mxPoint x="90" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge82" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_n_in" target="update_select_n_empty">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge83" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_select_n_empty" target="update_select_n_blank">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge84" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_select_n_blank" target="update_select_n_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1025" y="7640" />
+              <mxPoint x="1025" y="7490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge85" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_n_empty" target="update_select_n_true">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge86" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_n_true" target="update_select_n_for">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge87" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_n_for" target="update_select_n_next">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge88" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_n_next" target="update_select_n_char">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge89" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_select_n_char" target="update_select_n_false">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge90" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_select_n_char" target="update_select_n_for">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2080" y="8260" />
+              <mxPoint x="2080" y="7940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge91" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_n_for" target="update_select_n_valid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1475" y="7940" />
+              <mxPoint x="1475" y="8360" />
+              <mxPoint x="1760" y="8360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge92" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_select_n_false" target="update_select_n_valid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1260" y="8460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge93" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_n_valid" target="update_select_n_ret">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge94" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_select_n_valid" target="update_select_n_error">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge95" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_select_n_error" target="update_select_n_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2545" y="8460" />
+              <mxPoint x="2545" y="7490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge96" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_iter" target="update_select_for">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge97" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_for" target="update_select_show">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge98" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_select_show" target="update_select_for">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2090" y="7275" />
+              <mxPoint x="2090" y="7110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge99" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_select_for" target="update_select_n_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1460" y="7110" />
+              <mxPoint x="1460" y="7490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge100" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_n_ret" target="update_select_range">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge101" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_range" target="update_select_index">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge102" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_select_range" target="update_select_bad">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge103" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_select_bad" target="update_select_n_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2610" y="8810" />
+              <mxPoint x="2610" y="7490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge104" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_empty" target="update_select_iter">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge105" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_select_index" target="replacement">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge106" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_name_in" target="update_name_ok">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge107" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_name_ok" target="update_name_ret">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge108" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_name_ok" target="update_name_err">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge109" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_name_err" target="update_name_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1025" y="9425" />
+              <mxPoint x="1025" y="9280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge110" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_type_in" target="update_type_ok">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge111" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_type_ok" target="update_type_ret">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge112" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_type_ok" target="update_type_err">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge113" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_type_err" target="update_type_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1025" y="9875" />
+              <mxPoint x="1025" y="9730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge114" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_num_in" target="update_num_empty">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge115" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_num_empty" target="update_num_blank">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge116" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_num_blank" target="update_num_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1025" y="10330" />
+              <mxPoint x="1025" y="10180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge117" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_num_empty" target="update_num_true">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge118" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_num_true" target="update_num_for">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge119" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_num_for" target="update_num_next">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge120" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_num_next" target="update_num_char">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge121" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_num_char" target="update_num_false">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge122" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_num_char" target="update_num_for">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2080" y="10950" />
+              <mxPoint x="2080" y="10630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge123" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_num_for" target="update_num_valid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1475" y="10630" />
+              <mxPoint x="1475" y="11050" />
+              <mxPoint x="1760" y="11050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge124" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_num_false" target="update_num_valid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1260" y="11150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge125" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_num_valid" target="update_num_ret">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge126" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="update_num_valid" target="update_num_error">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge127" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_num_error" target="update_num_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2545" y="11150" />
+              <mxPoint x="2545" y="10180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge128" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_name_ret" target="update_type_in">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge129" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_type_ret" target="update_num_in">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge130" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_num_ret" target="update_dict">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge131" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="replacement" target="update_name_in">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge132" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="update_dict" target="set">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge133" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="set" target="update_success">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge134" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="update_success" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4750" y="11780" />
+              <mxPoint x="4750" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge135" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="choice3" target="choice4">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge136" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="choice4" target="delete_title">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge137" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_title" target="delete_empty">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge138" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="delete_empty" target="delete_blank">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge139" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="delete_blank" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="90" y="12205" />
+              <mxPoint x="90" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge140" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_n_in" target="delete_select_n_empty">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge141" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="delete_select_n_empty" target="delete_select_n_blank">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge142" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="delete_select_n_blank" target="delete_select_n_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1025" y="13070" />
+              <mxPoint x="1025" y="12920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge143" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_n_empty" target="delete_select_n_true">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge144" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_n_true" target="delete_select_n_for">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge145" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_n_for" target="delete_select_n_next">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge146" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_n_next" target="delete_select_n_char">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge147" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="delete_select_n_char" target="delete_select_n_false">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge148" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="delete_select_n_char" target="delete_select_n_for">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2080" y="13690" />
+              <mxPoint x="2080" y="13370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge149" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_n_for" target="delete_select_n_valid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1475" y="13370" />
+              <mxPoint x="1475" y="13790" />
+              <mxPoint x="1760" y="13790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge150" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="delete_select_n_false" target="delete_select_n_valid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1260" y="13890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge151" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_n_valid" target="delete_select_n_ret">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge152" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="delete_select_n_valid" target="delete_select_n_error">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge153" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="delete_select_n_error" target="delete_select_n_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2545" y="13890" />
+              <mxPoint x="2545" y="12920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge154" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_iter" target="delete_select_for">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge155" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_for" target="delete_select_show">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge156" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="delete_select_show" target="delete_select_for">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2090" y="12705" />
+              <mxPoint x="2090" y="12540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge157" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="delete_select_for" target="delete_select_n_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1460" y="12540" />
+              <mxPoint x="1460" y="12920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge158" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_n_ret" target="delete_select_range">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge159" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_range" target="delete_select_index">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge160" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="delete_select_range" target="delete_select_bad">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge161" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="delete_select_bad" target="delete_select_n_in">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2610" y="14240" />
+              <mxPoint x="2610" y="12920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge162" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_empty" target="delete_select_iter">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge163" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="delete_select_index" target="pop">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge164" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="pop" target="delete_success">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge165" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="delete_success" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4750" y="14720" />
+              <mxPoint x="4750" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge166" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="choice4" target="choice5">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge167" value="Ya" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="choice5" target="adminlogout">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge168" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="adminlogout" target="login_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="4900" y="14965" />
+              <mxPoint x="4900" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge169" value="Tidak" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="choice5" target="admininvalid">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge170" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#202020;strokeWidth=2;jumpStyle=arc;jumpSize=10;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="admininvalid" target="menu_header">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="150" y="15175" />
+              <mxPoint x="150" y="1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
